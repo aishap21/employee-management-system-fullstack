@@ -35,10 +35,6 @@ public class EmployeeController {
         List<Employee> employees = employeeService.getAllEmployees();
         return ResponseEntity.ok(employees);
     }
-    @GetMapping("/")
-     public String home() {
-     return "Employee API is running!";
-     }
 
     @GetMapping("/{id}")
     public ResponseEntity<Employee> getEmployeeById(@PathVariable Long id) {
