@@ -21,7 +21,10 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/employees")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = {
+    "http://localhost:3000",
+    "https://frontend-w01a.onrender.com"   
+})
 public class EmployeeController {
 
     @Autowired
