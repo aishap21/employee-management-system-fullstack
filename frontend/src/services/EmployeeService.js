@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost:8080/api/employees';
+
+const BASE_URL = 'https://employee-backend-puc2.onrender.com/api/employees';  
 
 const EmployeeService = {
 
